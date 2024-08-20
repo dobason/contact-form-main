@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<form id="my-form" action="/">
+  <div class="container">
+    <div class="info">
+      <div class="header">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="name">
+        <div class="left">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name"><br>
+          <div class="error"></div>
+        </div>
+        <div class="right">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name"><br>
+          <div class="error"></div>
+        </div>
+      </div>
+      <div class="email">
+        <label for="email">Email Address *</label><br>
+        <input type="email" id="email"><br>
+        <div class="error"></div>
+      </div>
+
+      <div class="head-type">
+        <label for="type">Query Type *</label>
+      </div>
+      <div class="type">
+        <div class="left-radio">
+          <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry">
+          <label for="general-enquiry">General Enquiry</label><br>
+        </div>
+        <div class="right-radio">
+          <input type="radio" id="support-request" name="query-type" value="Support Request">
+          <label for="support-request">Support Request</label><br>
+        </div>
+      </div>
+      <div class="error query-type-error"></div> <!-- Đặt class để dễ định dạng -->
+
+      <div class="message">
+        <p>Message *</p>
+        <textarea name="comment" form="usrform" id="textArea"></textarea>
+        <div class="error"></div>
+      </div>
+
+      <div class="form-complete">
+        <input type="checkbox" id="consent-checkbox">
+        <p>I consent to being contacted by the team *</p>
+        <div class="error consent-error"></div> <!-- Đặt class để dễ định dạng -->
+      </div>
+      
+      <button type="submit" class="submit-form" id="submit-btn">Submit</button>
+      <div id="success-message" class="success-message" style="display:none;">
+        Message Sent!<br>
+        Thanks for completing the form. We'll be in touch soon!
+      </div>
+    </div>
+
+    
+
+    
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Giuso</a>.
+  </div>
+</form>
+<!-- Kết nối file javascript -->
+<script src="main.js"></script>
+</body>
+</html>
